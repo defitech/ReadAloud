@@ -17,6 +17,8 @@
 		D776FF371732987000499564 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D776FF171732987000499564 /* Cocoa.framework */; };
 		D776FF3F1732987000499564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D776FF3D1732987000499564 /* InfoPlist.strings */; };
 		D776FF421732987000499564 /* lecteurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF411732987000499564 /* lecteurTests.m */; };
+		D776FF5317329C1400499564 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF5117329C1400499564 /* MasterViewController.m */; };
+		D776FF5417329C1400499564 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D776FF5217329C1400499564 /* MasterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		D776FF3E1732987000499564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D776FF401732987000499564 /* lecteurTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lecteurTests.h; sourceTree = "<group>"; };
 		D776FF411732987000499564 /* lecteurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lecteurTests.m; sourceTree = "<group>"; };
+		D776FF5017329C1400499564 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
+		D776FF5117329C1400499564 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
+		D776FF5217329C1400499564 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterViewController.xib; path = ../MasterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,9 @@
 		D776FF1D1732987000499564 /* lecteur */ = {
 			isa = PBXGroup;
 			children = (
+				D776FF5017329C1400499564 /* MasterViewController.h */,
+				D776FF5117329C1400499564 /* MasterViewController.m */,
+				D776FF5217329C1400499564 /* MasterViewController.xib */,
 				D776FF291732987000499564 /* AppDelegate.h */,
 				D776FF2A1732987000499564 /* AppDelegate.m */,
 				D776FF2C1732987000499564 /* MainMenu.xib */,
@@ -227,6 +235,7 @@
 				D776FF221732987000499564 /* InfoPlist.strings in Resources */,
 				D776FF281732987000499564 /* Credits.rtf in Resources */,
 				D776FF2E1732987000499564 /* MainMenu.xib in Resources */,
+				D776FF5417329C1400499564 /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +272,7 @@
 			files = (
 				D776FF241732987000499564 /* main.m in Sources */,
 				D776FF2B1732987000499564 /* AppDelegate.m in Sources */,
+				D776FF5317329C1400499564 /* MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
