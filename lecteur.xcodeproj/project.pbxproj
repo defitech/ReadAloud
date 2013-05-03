@@ -19,6 +19,8 @@
 		D776FF421732987000499564 /* lecteurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF411732987000499564 /* lecteurTests.m */; };
 		D776FF5317329C1400499564 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF5117329C1400499564 /* MasterViewController.m */; };
 		D776FF5417329C1400499564 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D776FF5217329C1400499564 /* MasterViewController.xib */; };
+		D7B6C93F1733DDB60025704D /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B6C93E1733DDB60025704D /* greenButton.png */; };
+		D7B6C9411733DDC30025704D /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B6C9401733DDC30025704D /* redButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D776FF5017329C1400499564 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		D776FF5117329C1400499564 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
 		D776FF5217329C1400499564 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterViewController.xib; path = ../MasterViewController.xib; sourceTree = "<group>"; };
+		D7B6C93E1733DDB60025704D /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenButton.png; path = graphics/greenButton.png; sourceTree = SOURCE_ROOT; };
+		D7B6C9401733DDC30025704D /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redButton.png; path = graphics/redButton.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 			children = (
 				D776FF5017329C1400499564 /* MasterViewController.h */,
 				D776FF5117329C1400499564 /* MasterViewController.m */,
+				D7B6C93E1733DDB60025704D /* greenButton.png */,
+				D7B6C9401733DDC30025704D /* redButton.png */,
 				D776FF5217329C1400499564 /* MasterViewController.xib */,
 				D776FF291732987000499564 /* AppDelegate.h */,
 				D776FF2A1732987000499564 /* AppDelegate.m */,
@@ -236,6 +242,8 @@
 				D776FF281732987000499564 /* Credits.rtf in Resources */,
 				D776FF2E1732987000499564 /* MainMenu.xib in Resources */,
 				D776FF5417329C1400499564 /* MasterViewController.xib in Resources */,
+				D7B6C93F1733DDB60025704D /* greenButton.png in Resources */,
+				D7B6C9411733DDC30025704D /* redButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +470,7 @@
 				D776FF471732987000499564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D776FF481732987000499564 /* Build configuration list for PBXNativeTarget "lecteurTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +479,7 @@
 				D776FF4A1732987000499564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
