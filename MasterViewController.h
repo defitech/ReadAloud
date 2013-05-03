@@ -10,11 +10,14 @@
 
 @interface MasterViewController : NSViewController {
     NSSpeechSynthesizer *synth;
+    IBOutlet NSSlider *speechSpeedSlider;
 }
 
 @property (nonatomic, retain) NSSpeechSynthesizer *synth;
+@property (nonatomic, retain) IBOutlet NSSlider *speechSpeedSlider;
 
 - (IBAction)buttonStartPressed:(id)sender;
 - (IBAction)buttonStopPressed:(id)sender;
+- (IBAction)valueChangedForspeechSpeedSlider:(id)sender;
 
 @end

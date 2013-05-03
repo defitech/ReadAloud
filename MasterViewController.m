@@ -14,10 +14,11 @@
 
 @implementation MasterViewController
 
-@synthesize synth;
+@synthesize synth, speechSpeedSlider;
 
 bool programON;
 NSTask *task;
+float sliderFloatValue;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,10 +26,13 @@ NSTask *task;
     if (self) {
         self.synth = [[NSSpeechSynthesizer alloc] init]; //start with default voice
         //[synth setDelegate:synth.delegate]; //useful?
+        [speechSpeedSlider setFloatValue:[synth rate]];
+
     }
     
     programON = false;
     task = nil;
+    sliderFloatValue = [synth rate];
     
     return self;
 }
@@ -49,12 +53,6 @@ NSTask *task;
 
 - (void)ReadClipboard
 {
-    /*if (task == nil) {
-        task = [[NSTask alloc] init];
-        [task setLaunchPath: @"/Users/dev/Documents/scripts/lecteur/lecteur/ScriptForReading.sh"];
-        [task launch];
-    } else NSLog(@"Task should already be started (not equal to nil)");
-    */
     [synth setVoice:nil];   //sets voice to current voice on the computer
     NSString *PasteboardContent = @" ";
     
@@ -74,6 +72,7 @@ NSTask *task;
                 [synth stopSpeaking];
             }
         } else if (copiedItems != nil && [copiedItems count] > 0 && [[copiedItems objectAtIndex:0] length] > 0 && ![PasteboardContent isEqualToString:[copiedItems objectAtIndex:0]]) {
+            [synth setRate:sliderFloatValue];
             [synth startSpeakingString:[copiedItems objectAtIndex:0]];
             //NSLog(@"ReadClipboard: %@, %@",PasteboardContent, [copiedItems objectAtIndex:0]);
             PasteboardContent = [copiedItems objectAtIndex:0];
@@ -86,6 +85,12 @@ NSTask *task;
     }
     
     if ([synth isSpeaking]) [synth stopSpeaking];
+}
+
+- (IBAction)valueChangedForspeechSpeedSlider:(id)sender
+{
+    sliderFloatValue = [speechSpeedSlider floatValue];
+    NSLog(@"rate value:%f",[speechSpeedSlider floatValue]);
 }
 
 @end
