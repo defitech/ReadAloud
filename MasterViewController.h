@@ -16,8 +16,7 @@
 @property (nonatomic, retain) NSSpeechSynthesizer *synth;
 @property (nonatomic, retain) IBOutlet NSSlider *speechSpeedSlider;
 
-- (IBAction)buttonStartPressed:(id)sender;
-- (IBAction)buttonStopPressed:(id)sender;
+- (IBAction)buttonStartStopPressed:(id)sender;
 - (IBAction)valueChangedForspeechSpeedSlider:(id)sender;
 
 @end

@@ -38,17 +38,15 @@ float sliderFloatValue;
 }
 
 
-- (IBAction)buttonStartPressed:(id)sender
+- (IBAction)buttonStartStopPressed:(id)sender
 {
-    programON = true;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [self ReadClipboard];
-    });
-}
-
-- (IBAction)buttonStopPressed:(id)sender
-{
-    programON = false;    
+    if (programON == false) {
+        programON = true;
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [self ReadClipboard];
+        });
+    } else programON = false; 
+    
 }
 
 - (void)ReadClipboard
@@ -90,7 +88,6 @@ float sliderFloatValue;
 - (IBAction)valueChangedForspeechSpeedSlider:(id)sender
 {
     sliderFloatValue = [speechSpeedSlider floatValue];
-    NSLog(@"rate value:%f",[speechSpeedSlider floatValue]);
 }
 
 @end
