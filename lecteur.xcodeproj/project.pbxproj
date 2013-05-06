@@ -125,9 +125,8 @@
 			children = (
 				D776FF5017329C1400499564 /* MasterViewController.h */,
 				D776FF5117329C1400499564 /* MasterViewController.m */,
-				D7B6C93E1733DDB60025704D /* greenButton.png */,
-				D7B6C9401733DDC30025704D /* redButton.png */,
 				D776FF5217329C1400499564 /* MasterViewController.xib */,
+				D7F426E31737A0AE00543E0A /* graphics */,
 				D776FF291732987000499564 /* AppDelegate.h */,
 				D776FF2A1732987000499564 /* AppDelegate.m */,
 				D776FF2C1732987000499564 /* MainMenu.xib */,
@@ -165,6 +164,15 @@
 				D776FF3D1732987000499564 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7F426E31737A0AE00543E0A /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				D7B6C93E1733DDB60025704D /* greenButton.png */,
+				D7B6C9401733DDC30025704D /* redButton.png */,
+			);
+			name = graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
