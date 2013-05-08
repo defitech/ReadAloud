@@ -14,7 +14,7 @@
 
 @implementation MasterViewController
 
-@synthesize synth, speechSpeedSlider;
+@synthesize synth, speechSpeedSlider, instructions, buttonHideInstructions;
 
 bool programON;
 NSTask *task;
@@ -27,7 +27,6 @@ float sliderFloatValue;
         self.synth = [[NSSpeechSynthesizer alloc] init]; //start with default voice
         //[synth setDelegate:synth.delegate]; //useful?
         [speechSpeedSlider setFloatValue:[synth rate]];
-
     }
     
     programON = false;
@@ -90,4 +89,15 @@ float sliderFloatValue;
     sliderFloatValue = [speechSpeedSlider floatValue];
 }
 
+- (IBAction)buttonInstructionsPressed:(id)sender
+{
+    [instructions setHidden:false];
+    [buttonHideInstructions setHidden:false];
+}
+
+- (IBAction)buttonHideInstructionsPressed:(id)sender
+{
+    [instructions setHidden:true];
+    [buttonHideInstructions setHidden:true];
+}
 @end

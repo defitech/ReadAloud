@@ -19,6 +19,7 @@
 		D776FF421732987000499564 /* lecteurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF411732987000499564 /* lecteurTests.m */; };
 		D776FF5317329C1400499564 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF5117329C1400499564 /* MasterViewController.m */; };
 		D776FF5417329C1400499564 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D776FF5217329C1400499564 /* MasterViewController.xib */; };
+		D79D574E173A582300678D4A /* Instructions-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D79D574D173A582300678D4A /* Instructions-icon.png */; };
 		D7B6C93F1733DDB60025704D /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B6C93E1733DDB60025704D /* greenButton.png */; };
 		D7B6C9411733DDC30025704D /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B6C9401733DDC30025704D /* redButton.png */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		D776FF5017329C1400499564 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		D776FF5117329C1400499564 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
 		D776FF5217329C1400499564 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterViewController.xib; path = ../MasterViewController.xib; sourceTree = "<group>"; };
+		D79D574D173A582300678D4A /* Instructions-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Instructions-icon.png"; path = "graphics/Instructions-icon.png"; sourceTree = SOURCE_ROOT; };
 		D7B6C93E1733DDB60025704D /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenButton.png; path = graphics/greenButton.png; sourceTree = SOURCE_ROOT; };
 		D7B6C9401733DDC30025704D /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redButton.png; path = graphics/redButton.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 		D7F426E31737A0AE00543E0A /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				D79D574D173A582300678D4A /* Instructions-icon.png */,
 				D7B6C93E1733DDB60025704D /* greenButton.png */,
 				D7B6C9401733DDC30025704D /* redButton.png */,
 			);
@@ -252,6 +255,7 @@
 				D776FF5417329C1400499564 /* MasterViewController.xib in Resources */,
 				D7B6C93F1733DDB60025704D /* greenButton.png in Resources */,
 				D7B6C9411733DDC30025704D /* redButton.png in Resources */,
+				D79D574E173A582300678D4A /* Instructions-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
