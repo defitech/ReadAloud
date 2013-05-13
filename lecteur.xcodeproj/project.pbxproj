@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D76CA2BE1740E947001C13C9 /* mouth_icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = D76CA2BD1740E947001C13C9 /* mouth_icon.iconset */; };
 		D776FF181732987000499564 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D776FF171732987000499564 /* Cocoa.framework */; };
 		D776FF221732987000499564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D776FF201732987000499564 /* InfoPlist.strings */; };
 		D776FF241732987000499564 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF231732987000499564 /* main.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D76CA2BD1740E947001C13C9 /* mouth_icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = mouth_icon.iconset; sourceTree = "<group>"; };
 		D776FF141732987000499564 /* lecteur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lecteur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D776FF171732987000499564 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D776FF1A1732987000499564 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -86,6 +88,7 @@
 		D776FF0B1732987000499564 = {
 			isa = PBXGroup;
 			children = (
+				D76CA2BD1740E947001C13C9 /* mouth_icon.iconset */,
 				D776FF1D1732987000499564 /* lecteur */,
 				D776FF3A1732987000499564 /* lecteurTests */,
 				D776FF161732987000499564 /* Frameworks */,
@@ -256,6 +259,7 @@
 				D7B6C93F1733DDB60025704D /* greenButton.png in Resources */,
 				D7B6C9411733DDC30025704D /* redButton.png in Resources */,
 				D79D574E173A582300678D4A /* Instructions-icon.png in Resources */,
+				D76CA2BE1740E947001C13C9 /* mouth_icon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
