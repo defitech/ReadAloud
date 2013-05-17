@@ -7,7 +7,6 @@
 //
 
 #import "MasterViewController.h"
-#import "wav_to_flac.h"
 #import <AudioToolbox/AudioConverter.h>
 
 @interface MasterViewController ()
@@ -33,7 +32,6 @@ float sliderFloatValue;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *appSettingsPath = [documentsDirectory stringByAppendingPathComponent:@"testAudio.aiff"];
-    //NSURL *url=[[NSURL alloc]initFileURLWithPath:appSettingsPath];
     self.urlForSavedFile = [[NSURL alloc] initFileURLWithPath:appSettingsPath];
     programON = false;
     task = nil;
@@ -79,6 +77,17 @@ float sliderFloatValue;
             //[synth setRate:sliderFloatValue];
             //[synth startSpeakingString:[copiedItems objectAtIndex:0]];
             if ([synth startSpeakingString:[copiedItems objectAtIndex:0] toURL:urlForSavedFile]) {
+                usleep(2000000);
+                NSTask *task;
+                task = [[NSTask alloc] init];
+                [task setLaunchPath: @"/usr/local/bin/flac"];
+                
+                NSArray *arguments;
+                arguments = [NSArray arrayWithObjects: @"-f", @"/Users/dev/Documents/testAudio.aiff", nil];
+                [task setArguments: arguments];
+                
+                [task launch];
+                
                 NSString *homeDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
                 NSString *filePath = [NSString stringWithFormat:@"%@/%@", homeDirectory, @"testAudio.flac"];
                 NSLog(@"path:%@",filePath);
@@ -94,9 +103,9 @@ float sliderFloatValue;
                 
                 //set headers
                 
-                [request addValue:@"Content-Type" forHTTPHeaderField:@"audio/x-flac; rate=16000"];
+                [request addValue:@"Content-Type" forHTTPHeaderField:@"audio/x-flac; rate=22050"];
                 
-                [request addValue:@"audio/x-flac; rate=16000" forHTTPHeaderField:@"Content-Type"];
+                [request addValue:@"audio/x-flac; rate=22050" forHTTPHeaderField:@"Content-Type"];
                 
                 [request setHTTPBody:myData];
                 
