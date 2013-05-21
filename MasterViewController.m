@@ -7,15 +7,15 @@
 //
 
 #import "MasterViewController.h"
-#import <AudioToolbox/AudioConverter.h>
+#import "Parameters.h"
 
 @interface MasterViewController ()
-
+@property (nonatomic,strong) IBOutlet Parameters *parametersViewController;
 @end
 
 @implementation MasterViewController
 
-@synthesize synth, speechSpeedSlider, instructions, buttonHideInstructions, urlForSavedFile;
+@synthesize synth, speechSpeedSlider;
 
 bool programON;
 NSTask *task;
@@ -174,13 +174,16 @@ float sliderFloatValue;
 
 - (IBAction)buttonInstructionsPressed:(id)sender
 {
-    [instructions setHidden:false];
-    [buttonHideInstructions setHidden:false];
+    // 1. Create the master View Controller
+    self.parametersViewController = [[Parameters alloc] initWithNibName:@"Parameters" bundle:nil];
+    
+    // 2. Add the view controller to the Window's content view
+    while ([self.view.subviews count] >0) {
+        [[self.view.subviews objectAtIndex:0] removeFromSuperview];
+    }
+    [self.view addSubview:self.parametersViewController.view];
+    self.parametersViewController.view.frame = ((NSView*)self.view).bounds;
+    
 }
 
-- (IBAction)buttonHideInstructionsPressed:(id)sender
-{
-    [instructions setHidden:true];
-    [buttonHideInstructions setHidden:true];
-}
 @end
