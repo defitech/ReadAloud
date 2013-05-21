@@ -8,9 +8,11 @@
 
 #import "MasterViewController.h"
 #import "Parameters.h"
+#import "SpellChecker.h"
 
 @interface MasterViewController ()
 @property (nonatomic,strong) IBOutlet Parameters *parametersViewController;
+@property (nonatomic,strong) IBOutlet SpellChecker *spellcheckerViewController;
 @end
 
 @implementation MasterViewController
@@ -18,7 +20,6 @@
 @synthesize synth, speechSpeedSlider;
 
 bool programON;
-NSTask *task;
 float sliderFloatValue;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -29,12 +30,7 @@ float sliderFloatValue;
         //[synth setDelegate:synth.delegate]; //useful?
         [speechSpeedSlider setFloatValue:[synth rate]];
     }
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *appSettingsPath = [documentsDirectory stringByAppendingPathComponent:@"testAudio.aiff"];
-    self.urlForSavedFile = [[NSURL alloc] initFileURLWithPath:appSettingsPath];
     programON = false;
-    task = nil;
     sliderFloatValue = [synth rate];
     
     
@@ -74,88 +70,9 @@ float sliderFloatValue;
                 [synth stopSpeaking];
             }
         } else if (copiedItems != nil && [copiedItems count] > 0 && [[copiedItems objectAtIndex:0] length] > 0 && ![PasteboardContent isEqualToString:[copiedItems objectAtIndex:0]]) {
-            //[synth setRate:sliderFloatValue];
-            //[synth startSpeakingString:[copiedItems objectAtIndex:0]];
-            if ([synth startSpeakingString:[copiedItems objectAtIndex:0] toURL:urlForSavedFile]) {
-                usleep(2000000);
-                NSTask *task;
-                task = [[NSTask alloc] init];
-                [task setLaunchPath: @"/usr/local/bin/flac"];
-                
-                NSArray *arguments;
-                arguments = [NSArray arrayWithObjects: @"-f", @"/Users/dev/Documents/testAudio.aiff", nil];
-                [task setArguments: arguments];
-                
-                [task launch];
-                
-                NSString *homeDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-                NSString *filePath = [NSString stringWithFormat:@"%@/%@", homeDirectory, @"testAudio.flac"];
-                NSLog(@"path:%@",filePath);
-                
-                
-                NSData *myData = [NSData dataWithContentsOfFile:filePath];
-                
-                NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
-                                                initWithURL:[NSURL
-                                                             URLWithString:@"https://www.google.com/speech-api/v1/recognize?xjerr=1&client=chromium&lang=en-US"]];
-                
-                [request setHTTPMethod:@"POST"];
-                
-                //set headers
-                
-                [request addValue:@"Content-Type" forHTTPHeaderField:@"audio/x-flac; rate=22050"];
-                
-                [request addValue:@"audio/x-flac; rate=22050" forHTTPHeaderField:@"Content-Type"];
-                
-                [request setHTTPBody:myData];
-                
-                [request setValue:[NSString stringWithFormat:@"%ld",(unsigned long)[myData length]] forHTTPHeaderField:@"Content-length"];
-                
-                NSHTTPURLResponse* urlResponse = nil;
-                NSError *error = [[NSError alloc] init];
-                NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
-                NSString *result = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-                
-                NSLog(@"The answer is: %@",result);
-                
-                /*NSData *myData = [NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/recordTest.flac", urlForSavedFile]];
-                //NSString *audio = [NSString stringWithContentsOfFile:[NSString stringWithFormat:@"%@/recordTest.flac", recDir]];
-                
-                
-                
-                NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
-                                                initWithURL:[NSURL
-                                                             URLWithString:@"https://www.google.com/speech-api/v1/recognize?xjerr=1&client=chromium&lang=en-US"]];
-                
-                
-                
-                
-                
-                
-                [request setHTTPMethod:@"POST"];
-                
-                //set headers
-                
-                [request addValue:@"Content-Type" forHTTPHeaderField:@"audio/x-flac; rate=16000"];
-                
-                [request addValue:@"audio/x-flac; rate=16000" forHTTPHeaderField:@"Content-Type"];
-                
-                NSString *requestBody = [[NSString alloc] initWithFormat:@"Content=%@", myData];
-                
-                [request setHTTPBody:[requestBody dataUsingEncoding:NSASCIIStringEncoding]];
-                
-                [request setValue:[NSString stringWithFormat:@"%ld",(unsigned long)[myData length]] forHTTPHeaderField:@"Content-length"];
-                
-                
-                
-                NSHTTPURLResponse* urlResponse = nil;  
-                NSError *error = [[NSError alloc] init];  
-                NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];  
-                NSString *result = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-                
-                NSLog(@"The answer is: %@",result);*/
-            } else NSLog(@"problem starting to speak out string");
-            PasteboardContent = [copiedItems objectAtIndex:0];
+                [synth setRate:sliderFloatValue];
+                [synth startSpeakingString:[copiedItems objectAtIndex:0]];
+                PasteboardContent = [copiedItems objectAtIndex:0];
         }
         if (copiedItems != nil && [copiedItems count] == 0) {
             [synth stopSpeaking];
@@ -184,6 +101,19 @@ float sliderFloatValue;
     [self.view addSubview:self.parametersViewController.view];
     self.parametersViewController.view.frame = ((NSView*)self.view).bounds;
     
+}
+
+- (IBAction)buttonSpellCheckerPressed:(id)sender
+{
+    // 1. Create the master View Controller
+    self.spellcheckerViewController = [[SpellChecker alloc] initWithNibName:@"SpellChecker" bundle:nil];
+    
+    // 2. Add the view controller to the Window's content view
+    while ([self.view.subviews count] >0) {
+        [[self.view.subviews objectAtIndex:0] removeFromSuperview];
+    }
+    [self.view addSubview:self.spellcheckerViewController.view];
+    self.spellcheckerViewController.view.frame = ((NSView*)self.view).bounds;
 }
 
 @end

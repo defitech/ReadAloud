@@ -11,8 +11,6 @@
 @interface MasterViewController : NSViewController {
     NSSpeechSynthesizer *synth;
     IBOutlet NSSlider *speechSpeedSlider;
-    IBOutlet NSButton *buttonHideInstructions;
-    NSURL *urlForSavedFile;
 }
 
 @property (nonatomic, retain) NSSpeechSynthesizer *synth;
@@ -21,6 +19,6 @@
 @property (nonatomic, retain) IBOutlet NSSlider *speechSpeedSlider;
 - (IBAction)valueChangedForspeechSpeedSlider:(id)sender;
 - (IBAction)buttonInstructionsPressed:(id)sender;
-
+- (IBAction)buttonSpellCheckerPressed:(id)sender;
 
 @end

@@ -23,6 +23,8 @@
 		D79D574E173A582300678D4A /* Instructions-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D79D574D173A582300678D4A /* Instructions-icon.png */; };
 		D7A369FA174B7DE700C34468 /* Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A369F8174B7DE700C34468 /* Parameters.m */; };
 		D7A369FB174B7DE700C34468 /* Parameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A369F9174B7DE700C34468 /* Parameters.xib */; };
+		D7A369FF174BC52B00C34468 /* SpellChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A369FD174BC52B00C34468 /* SpellChecker.m */; };
+		D7A36A00174BC52B00C34468 /* SpellChecker.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A369FE174BC52B00C34468 /* SpellChecker.xib */; };
 		D7B6C93F1733DDB60025704D /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B6C93E1733DDB60025704D /* greenButton.png */; };
 		D7B6C9411733DDC30025704D /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B6C9401733DDC30025704D /* redButton.png */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,9 @@
 		D7A369F7174B7DE700C34468 /* Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameters.h; sourceTree = "<group>"; };
 		D7A369F8174B7DE700C34468 /* Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parameters.m; sourceTree = "<group>"; };
 		D7A369F9174B7DE700C34468 /* Parameters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Parameters.xib; sourceTree = "<group>"; };
+		D7A369FC174BC52B00C34468 /* SpellChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpellChecker.h; sourceTree = "<group>"; };
+		D7A369FD174BC52B00C34468 /* SpellChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpellChecker.m; sourceTree = "<group>"; };
+		D7A369FE174BC52B00C34468 /* SpellChecker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpellChecker.xib; sourceTree = "<group>"; };
 		D7B6C93E1733DDB60025704D /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenButton.png; path = graphics/greenButton.png; sourceTree = SOURCE_ROOT; };
 		D7B6C9401733DDC30025704D /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redButton.png; path = graphics/redButton.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -144,6 +149,9 @@
 				D7A369F7174B7DE700C34468 /* Parameters.h */,
 				D7A369F8174B7DE700C34468 /* Parameters.m */,
 				D7A369F9174B7DE700C34468 /* Parameters.xib */,
+				D7A369FC174BC52B00C34468 /* SpellChecker.h */,
+				D7A369FD174BC52B00C34468 /* SpellChecker.m */,
+				D7A369FE174BC52B00C34468 /* SpellChecker.xib */,
 			);
 			path = lecteur;
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 				D79D574E173A582300678D4A /* Instructions-icon.png in Resources */,
 				D76CA2BE1740E947001C13C9 /* mouth_icon.iconset in Resources */,
 				D7A369FB174B7DE700C34468 /* Parameters.xib in Resources */,
+				D7A36A00174BC52B00C34468 /* SpellChecker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +316,7 @@
 				D776FF2B1732987000499564 /* AppDelegate.m in Sources */,
 				D776FF5317329C1400499564 /* MasterViewController.m in Sources */,
 				D7A369FA174B7DE700C34468 /* Parameters.m in Sources */,
+				D7A369FF174BC52B00C34468 /* SpellChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

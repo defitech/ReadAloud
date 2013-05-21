@@ -29,7 +29,8 @@
 
 
 
-- (IBAction)buttonGoToSpeechSynthesizer:(id)sender {
+- (IBAction)buttonGoToSpeechSynthesizer:(id)sender
+{
     // 1. Create the master View Controller
     self.masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
     
