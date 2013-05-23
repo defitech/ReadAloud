@@ -15,10 +15,10 @@
 
 @property (nonatomic, retain) NSSpeechSynthesizer *synth;
 
-- (IBAction)buttonStartStopPressed:(id)sender;
+- (IBAction)buttonStartStopPushed:(id)sender;
 @property (nonatomic, retain) IBOutlet NSSlider *speechSpeedSlider;
 - (IBAction)valueChangedForspeechSpeedSlider:(id)sender;
-- (IBAction)buttonInstructionsPressed:(id)sender;
-- (IBAction)buttonSpellCheckerPressed:(id)sender;
+- (IBAction)buttonInstructionsPushed:(id)sender;
+- (IBAction)buttonSpellCheckerPushed:(id)sender;
 
 @end

@@ -12,13 +12,15 @@
     NSSpeechSynthesizer *synth;
     NSURL *urlForSavedFile;
     IBOutlet NSTextView *textToBeCorrected;
+    IBOutlet NSTextView *textCorrected;
 }
 
 @property (nonatomic, retain) NSSpeechSynthesizer *synth;
 @property (nonatomic, retain) NSURL *urlForSavedFile;
 @property (nonatomic, retain) IBOutlet NSTextView *textToBeCorrected;
+@property (nonatomic, retain) IBOutlet NSTextView *textCorrected;
 
-- (IBAction)buttonBackPressed:(id)sender;
-- (IBAction)buttonCorrectPressed:(id)sender;
+- (IBAction)buttonBackPushed:(id)sender;
+- (IBAction)buttonCorrectPushed:(id)sender;
 
 @end

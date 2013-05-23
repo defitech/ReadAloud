@@ -18,7 +18,7 @@
 NSTask *task;
 float sliderFloatValue;
 
-@synthesize synth, urlForSavedFile, textToBeCorrected;
+@synthesize synth, urlForSavedFile, textToBeCorrected, textCorrected;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,7 +38,7 @@ float sliderFloatValue;
 }
 
 
-- (IBAction)buttonCorrectPressed:(id)sender
+- (IBAction)buttonCorrectPushed:(id)sender
 {
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -54,27 +54,33 @@ float sliderFloatValue;
     NSLog(@"string to be corrected:%@", stringToBeCorrected);
     if ([synth isSpeaking]) {
         NSLog(@"program is Reading the text");
-
     } else if ([stringToBeCorrected length] > 0) {
         //[synth setRate:sliderFloatValue];
         //[synth startSpeakingString:[copiedItems objectAtIndex:0]];
         if ([synth startSpeakingString:stringToBeCorrected toURL:urlForSavedFile]) {
-            usleep(2000000);
+            
+            /////////wait for synthesizer to be quiet
+            bool finishedReading = false;
+            while (finishedReading == false) {
+                usleep(300000);
+                if (![synth isSpeaking]) finishedReading = true;
+            }
+            
+            /////////prepare and launch commandline for converting the file using flac
             NSTask *task;
             task = [[NSTask alloc] init];
             [task setLaunchPath: @"/usr/local/bin/flac"];
-            
             NSArray *arguments;
             arguments = [NSArray arrayWithObjects: @"-f", @"/Users/dev/Documents/testAudio.aiff", nil];
             [task setArguments: arguments];
-            
             [task launch];
-            
+            usleep(300000);
             NSString *homeDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
             NSString *filePath = [NSString stringWithFormat:@"%@/%@", homeDirectory, @"testAudio.flac"];
             NSLog(@"path:%@",filePath);
             
             
+            ///////////request for the google API
             NSData *myData = [NSData dataWithContentsOfFile:filePath];
             
             NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
@@ -83,8 +89,7 @@ float sliderFloatValue;
             
             [request setHTTPMethod:@"POST"];
             
-            //set headers
-            
+            //set headers            
             [request addValue:@"Content-Type" forHTTPHeaderField:@"audio/x-flac; rate=22050"];
             
             [request addValue:@"audio/x-flac; rate=22050" forHTTPHeaderField:@"Content-Type"];
@@ -97,14 +102,22 @@ float sliderFloatValue;
             NSError *error = [[NSError alloc] init];
             NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&error];
             NSString *result = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-            
             NSLog(@"The answer is: %@",result);
+            //usleep(4000000);
+            NSRange startOfRangeOfResult = [result rangeOfString:@"utterance"];
+            NSRange endOfRangeOfResult = [result rangeOfString:@"confidence"];
+            NSRange rangeOResult = NSMakeRange(startOfRangeOfResult.location + startOfRangeOfResult.length + 3, endOfRangeOfResult.location - (startOfRangeOfResult.location + startOfRangeOfResult.length)-6);
+            if (rangeOResult.location > 0 && rangeOResult.location < [result length]) {
+                NSString *stringResult = [result substringWithRange:rangeOResult];
+                textCorrected.string = stringResult;
+            } else 
+                NSLog(@"problem with range -> range=%li,%li", (unsigned long)rangeOResult.location, (unsigned long)rangeOResult.length);
             
         } else NSLog(@"problem starting to speak out string");
     }
 }
 
-- (IBAction)buttonBackPressed:(id)sender
+- (IBAction)buttonBackPushed:(id)sender
 {
     // 1. Create the master View Controller
     self.masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];

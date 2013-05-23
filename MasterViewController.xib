@@ -218,22 +218,6 @@
 					<int key="connectionID">2</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">buttonStartStopPressed:</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="825467571"/>
-					</object>
-					<int key="connectionID">86</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">buttonInstructionsPressed:</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="1000130447"/>
-					</object>
-					<int key="connectionID">129</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">mainView</string>
 						<reference key="source" ref="1001"/>
@@ -259,11 +243,27 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">buttonSpellCheckerPressed:</string>
+						<string key="label">buttonStartStopPushed:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="825467571"/>
+					</object>
+					<int key="connectionID">310</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">buttonInstructionsPushed:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="1000130447"/>
+					</object>
+					<int key="connectionID">311</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">buttonSpellCheckerPushed:</string>
 						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="821410787"/>
 					</object>
-					<int key="connectionID">309</int>
+					<int key="connectionID">312</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -799,7 +799,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">309</int>
+			<int key="maxID">312</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -807,22 +807,22 @@
 					<string key="className">MasterViewController</string>
 					<string key="superclassName">NSViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="buttonInstructionsPressed:">id</string>
-						<string key="buttonSpellCheckerPressed:">id</string>
-						<string key="buttonStartStopPressed:">id</string>
+						<string key="buttonInstructionsPushed:">id</string>
+						<string key="buttonSpellCheckerPushed:">id</string>
+						<string key="buttonStartStopPushed:">id</string>
 						<string key="valueChangedForspeechSpeedSlider:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="buttonInstructionsPressed:">
-							<string key="name">buttonInstructionsPressed:</string>
+						<object class="IBActionInfo" key="buttonInstructionsPushed:">
+							<string key="name">buttonInstructionsPushed:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="buttonSpellCheckerPressed:">
-							<string key="name">buttonSpellCheckerPressed:</string>
+						<object class="IBActionInfo" key="buttonSpellCheckerPushed:">
+							<string key="name">buttonSpellCheckerPushed:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="buttonStartStopPressed:">
-							<string key="name">buttonStartStopPressed:</string>
+						<object class="IBActionInfo" key="buttonStartStopPushed:">
+							<string key="name">buttonStartStopPushed:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="valueChangedForspeechSpeedSlider:">
@@ -863,6 +863,27 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">NSTextView</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="orderFrontSharingServicePicker:">id</string>
+						<string key="toggleQuickLookPreviewPanel:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="orderFrontSharingServicePicker:">
+							<string key="name">orderFrontSharingServicePicker:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="toggleQuickLookPreviewPanel:">
+							<string key="name">toggleQuickLookPreviewPanel:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/NSTextView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">Parameters</string>
 					<string key="superclassName">NSViewController</string>
 					<object class="NSMutableDictionary" key="actions">
@@ -895,6 +916,39 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">SpellChecker</string>
 					<string key="superclassName">NSViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="buttonBackPushed:">id</string>
+						<string key="buttonCorrectPushed:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="buttonBackPushed:">
+							<string key="name">buttonBackPushed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="buttonCorrectPushed:">
+							<string key="name">buttonCorrectPushed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="masterViewController">MasterViewController</string>
+						<string key="textCorrected">NSTextView</string>
+						<string key="textToBeCorrected">NSTextView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="masterViewController">
+							<string key="name">masterViewController</string>
+							<string key="candidateClassName">MasterViewController</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="textCorrected">
+							<string key="name">textCorrected</string>
+							<string key="candidateClassName">NSTextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="textToBeCorrected">
+							<string key="name">textToBeCorrected</string>
+							<string key="candidateClassName">NSTextView</string>
+						</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/SpellChecker.h</string>

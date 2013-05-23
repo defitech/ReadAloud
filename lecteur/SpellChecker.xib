@@ -163,7 +163,7 @@
 										<string key="NSFrameSize">{148, 196}</string>
 										<reference key="NSSuperview" ref="920750539"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView" ref="994114403"/>
+										<reference key="NSNextKeyView" ref="979544904"/>
 										<string key="NSReuseIdentifierKey">_NS:13</string>
 										<object class="NSTextContainer" key="NSTextContainer" id="495655341">
 											<object class="NSLayoutManager" key="NSLayoutManager">
@@ -286,7 +286,7 @@
 						<string key="NSFrame">{{258, 11}, {150, 198}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="979544904"/>
+						<reference key="NSNextKeyView" ref="920750539"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="NSsFlags">133138</int>
 						<reference key="NSVScroller" ref="994114403"/>
@@ -329,7 +329,7 @@
 										<string key="NSFrameSize">{148, 196}</string>
 										<reference key="NSSuperview" ref="951310829"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView" ref="690006495"/>
+										<reference key="NSNextKeyView" ref="826380308"/>
 										<string key="NSReuseIdentifierKey">_NS:13</string>
 										<object class="NSTextContainer" key="NSTextContainer" id="291812718">
 											<object class="NSLayoutManager" key="NSLayoutManager">
@@ -431,7 +431,7 @@
 						<string key="NSFrame">{{25, 11}, {150, 198}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="826380308"/>
+						<reference key="NSNextKeyView" ref="951310829"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="NSsFlags">133138</int>
 						<reference key="NSVScroller" ref="690006495"/>
@@ -485,28 +485,36 @@
 					<int key="connectionID">2</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">buttonBackPressed:</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="850800803"/>
-					</object>
-					<int key="connectionID">14</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">buttonCorrectPressed:</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="966651374"/>
-					</object>
-					<int key="connectionID">69</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">textToBeCorrected</string>
 						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="533031290"/>
 					</object>
 					<int key="connectionID">70</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">textCorrected</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="585823147"/>
+					</object>
+					<int key="connectionID">78</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">buttonCorrectPushed:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="966651374"/>
+					</object>
+					<int key="connectionID">79</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">buttonBackPushed:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="469409298"/>
+					</object>
+					<int key="connectionID">80</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1127,7 +1135,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">77</int>
+			<int key="maxID">80</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1245,27 +1253,32 @@
 					<string key="className">SpellChecker</string>
 					<string key="superclassName">NSViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="buttonBackPressed:">id</string>
-						<string key="buttonCorrectPressed:">id</string>
+						<string key="buttonBackPushed:">id</string>
+						<string key="buttonCorrectPushed:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="buttonBackPressed:">
-							<string key="name">buttonBackPressed:</string>
+						<object class="IBActionInfo" key="buttonBackPushed:">
+							<string key="name">buttonBackPushed:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="buttonCorrectPressed:">
-							<string key="name">buttonCorrectPressed:</string>
+						<object class="IBActionInfo" key="buttonCorrectPushed:">
+							<string key="name">buttonCorrectPushed:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="masterViewController">MasterViewController</string>
+						<string key="textCorrected">NSTextView</string>
 						<string key="textToBeCorrected">NSTextView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="masterViewController">
 							<string key="name">masterViewController</string>
 							<string key="candidateClassName">MasterViewController</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="textCorrected">
+							<string key="name">textCorrected</string>
+							<string key="candidateClassName">NSTextView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="textToBeCorrected">
 							<string key="name">textToBeCorrected</string>

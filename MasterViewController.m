@@ -38,7 +38,7 @@ float sliderFloatValue;
 }
 
 //hello, how are you doing?
-- (IBAction)buttonStartStopPressed:(id)sender
+- (IBAction)buttonStartStopPushed:(id)sender
 {
     if (programON == false) {
         programON = true;
@@ -89,7 +89,7 @@ float sliderFloatValue;
     sliderFloatValue = [speechSpeedSlider floatValue];
 }
 
-- (IBAction)buttonInstructionsPressed:(id)sender
+- (IBAction)buttonInstructionsPushed:(id)sender
 {
     // 1. Create the master View Controller
     self.parametersViewController = [[Parameters alloc] initWithNibName:@"Parameters" bundle:nil];
@@ -103,7 +103,7 @@ float sliderFloatValue;
     
 }
 
-- (IBAction)buttonSpellCheckerPressed:(id)sender
+- (IBAction)buttonSpellCheckerPushed:(id)sender
 {
     // 1. Create the master View Controller
     self.spellcheckerViewController = [[SpellChecker alloc] initWithNibName:@"SpellChecker" bundle:nil];
