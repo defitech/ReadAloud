@@ -17,7 +17,7 @@
 		D776FF361732987000499564 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D776FF351732987000499564 /* SenTestingKit.framework */; };
 		D776FF371732987000499564 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D776FF171732987000499564 /* Cocoa.framework */; };
 		D776FF3F1732987000499564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D776FF3D1732987000499564 /* InfoPlist.strings */; };
-		D776FF421732987000499564 /* lecteurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF411732987000499564 /* lecteurTests.m */; };
+		D776FF421732987000499564 /* ReadAloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF411732987000499564 /* ReadAloudTests.m */; };
 		D776FF5317329C1400499564 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF5117329C1400499564 /* MasterViewController.m */; };
 		D776FF5417329C1400499564 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D776FF5217329C1400499564 /* MasterViewController.xib */; };
 		D79D574E173A582300678D4A /* Instructions-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D79D574D173A582300678D4A /* Instructions-icon.png */; };
@@ -33,31 +33,31 @@
 			containerPortal = D776FF0C1732987000499564 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D776FF131732987000499564;
-			remoteInfo = lecteur;
+			remoteInfo = ReadAloud;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D76CA2BD1740E947001C13C9 /* mouth_icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = mouth_icon.iconset; sourceTree = "<group>"; };
-		D776FF141732987000499564 /* lecteur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lecteur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D776FF141732987000499564 /* ReadAloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadAloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D776FF171732987000499564 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D776FF1A1732987000499564 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D776FF1B1732987000499564 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D776FF1C1732987000499564 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D776FF1F1732987000499564 /* lecteur-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lecteur-Info.plist"; sourceTree = "<group>"; };
+		D776FF1F1732987000499564 /* ReadAloud-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReadAloud-Info.plist"; sourceTree = "<group>"; };
 		D776FF211732987000499564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D776FF231732987000499564 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D776FF251732987000499564 /* lecteur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lecteur-Prefix.pch"; sourceTree = "<group>"; };
+		D776FF251732987000499564 /* ReadAloud-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReadAloud-Prefix.pch"; sourceTree = "<group>"; };
 		D776FF271732987000499564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D776FF291732987000499564 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D776FF2A1732987000499564 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D776FF2D1732987000499564 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D776FF341732987000499564 /* lecteurTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lecteurTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D776FF341732987000499564 /* ReadAloudTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadAloudTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D776FF351732987000499564 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D776FF3C1732987000499564 /* lecteurTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lecteurTests-Info.plist"; sourceTree = "<group>"; };
+		D776FF3C1732987000499564 /* ReadAloudTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReadAloudTests-Info.plist"; sourceTree = "<group>"; };
 		D776FF3E1732987000499564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D776FF401732987000499564 /* lecteurTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lecteurTests.h; sourceTree = "<group>"; };
-		D776FF411732987000499564 /* lecteurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lecteurTests.m; sourceTree = "<group>"; };
+		D776FF401732987000499564 /* ReadAloudTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadAloudTests.h; sourceTree = "<group>"; };
+		D776FF411732987000499564 /* ReadAloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadAloudTests.m; sourceTree = "<group>"; };
 		D776FF5017329C1400499564 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		D776FF5117329C1400499564 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
 		D776FF5217329C1400499564 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterViewController.xib; path = ../MasterViewController.xib; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				D76CA2BD1740E947001C13C9 /* mouth_icon.iconset */,
-				D776FF1D1732987000499564 /* lecteur */,
-				D776FF3A1732987000499564 /* lecteurTests */,
+				D776FF1D1732987000499564 /* ReadAloud */,
+				D776FF3A1732987000499564 /* ReadAloudTests */,
 				D776FF161732987000499564 /* Frameworks */,
 				D776FF151732987000499564 /* Products */,
 			);
@@ -104,8 +104,8 @@
 		D776FF151732987000499564 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D776FF141732987000499564 /* lecteur.app */,
-				D776FF341732987000499564 /* lecteurTests.octest */,
+				D776FF141732987000499564 /* ReadAloud.app */,
+				D776FF341732987000499564 /* ReadAloudTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		D776FF1D1732987000499564 /* lecteur */ = {
+		D776FF1D1732987000499564 /* ReadAloud */ = {
 			isa = PBXGroup;
 			children = (
 				D776FF5017329C1400499564 /* MasterViewController.h */,
@@ -145,35 +145,35 @@
 				D7A369F8174B7DE700C34468 /* Parameters.m */,
 				D7A369F9174B7DE700C34468 /* Parameters.xib */,
 			);
-			path = lecteur;
+			path = ReadAloud;
 			sourceTree = "<group>";
 		};
 		D776FF1E1732987000499564 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D776FF1F1732987000499564 /* lecteur-Info.plist */,
+				D776FF1F1732987000499564 /* ReadAloud-Info.plist */,
 				D776FF201732987000499564 /* InfoPlist.strings */,
 				D776FF231732987000499564 /* main.m */,
-				D776FF251732987000499564 /* lecteur-Prefix.pch */,
+				D776FF251732987000499564 /* ReadAloud-Prefix.pch */,
 				D776FF261732987000499564 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D776FF3A1732987000499564 /* lecteurTests */ = {
+		D776FF3A1732987000499564 /* ReadAloudTests */ = {
 			isa = PBXGroup;
 			children = (
-				D776FF401732987000499564 /* lecteurTests.h */,
-				D776FF411732987000499564 /* lecteurTests.m */,
+				D776FF401732987000499564 /* ReadAloudTests.h */,
+				D776FF411732987000499564 /* ReadAloudTests.m */,
 				D776FF3B1732987000499564 /* Supporting Files */,
 			);
-			path = lecteurTests;
+			path = ReadAloudTests;
 			sourceTree = "<group>";
 		};
 		D776FF3B1732987000499564 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D776FF3C1732987000499564 /* lecteurTests-Info.plist */,
+				D776FF3C1732987000499564 /* ReadAloudTests-Info.plist */,
 				D776FF3D1732987000499564 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -192,9 +192,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D776FF131732987000499564 /* lecteur */ = {
+		D776FF131732987000499564 /* ReadAloud */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D776FF451732987000499564 /* Build configuration list for PBXNativeTarget "lecteur" */;
+			buildConfigurationList = D776FF451732987000499564 /* Build configuration list for PBXNativeTarget "ReadAloud" */;
 			buildPhases = (
 				D776FF101732987000499564 /* Sources */,
 				D776FF111732987000499564 /* Frameworks */,
@@ -204,14 +204,14 @@
 			);
 			dependencies = (
 			);
-			name = lecteur;
-			productName = lecteur;
-			productReference = D776FF141732987000499564 /* lecteur.app */;
+			name = ReadAloud;
+			productName = ReadAloud;
+			productReference = D776FF141732987000499564 /* ReadAloud.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D776FF331732987000499564 /* lecteurTests */ = {
+		D776FF331732987000499564 /* ReadAloudTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D776FF481732987000499564 /* Build configuration list for PBXNativeTarget "lecteurTests" */;
+			buildConfigurationList = D776FF481732987000499564 /* Build configuration list for PBXNativeTarget "ReadAloudTests" */;
 			buildPhases = (
 				D776FF2F1732987000499564 /* Sources */,
 				D776FF301732987000499564 /* Frameworks */,
@@ -223,9 +223,9 @@
 			dependencies = (
 				D776FF391732987000499564 /* PBXTargetDependency */,
 			);
-			name = lecteurTests;
-			productName = lecteurTests;
-			productReference = D776FF341732987000499564 /* lecteurTests.octest */;
+			name = ReadAloudTests;
+			productName = ReadAloudTests;
+			productReference = D776FF341732987000499564 /* ReadAloudTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +237,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = dev;
 			};
-			buildConfigurationList = D776FF0F1732987000499564 /* Build configuration list for PBXProject "lecteur" */;
+			buildConfigurationList = D776FF0F1732987000499564 /* Build configuration list for PBXProject "ReadAloud" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -249,8 +249,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D776FF131732987000499564 /* lecteur */,
-				D776FF331732987000499564 /* lecteurTests */,
+				D776FF131732987000499564 /* ReadAloud */,
+				D776FF331732987000499564 /* ReadAloudTests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D776FF421732987000499564 /* lecteurTests.m in Sources */,
+				D776FF421732987000499564 /* ReadAloudTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +323,7 @@
 /* Begin PBXTargetDependency section */
 		D776FF391732987000499564 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D776FF131732987000499564 /* lecteur */;
+			target = D776FF131732987000499564 /* ReadAloud */;
 			targetProxy = D776FF381732987000499564 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -428,9 +428,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "lecteur/lecteur-Prefix.pch";
-				INFOPLIST_FILE = "lecteur/lecteur-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ReadAloud/ReadAloud-Prefix.pch";
+				INFOPLIST_FILE = "ReadAloud/ReadAloud-Info.plist";
+				PRODUCT_NAME = ReadAloud;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,9 +440,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "lecteur/lecteur-Prefix.pch";
-				INFOPLIST_FILE = "lecteur/lecteur-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ReadAloud/ReadAloud-Prefix.pch";
+				INFOPLIST_FILE = "ReadAloud/ReadAloud-Info.plist";
+				PRODUCT_NAME = ReadAloud;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -450,14 +450,15 @@
 		D776FF491732987000499564 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/lecteur.app/Contents/MacOS/lecteur";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReadAloud.app/Contents/MacOS/ReadAloud";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "lecteur/lecteur-Prefix.pch";
-				INFOPLIST_FILE = "lecteurTests/lecteurTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ReadAloud/ReadAloud-Prefix.pch";
+				INFOPLIST_FILE = "ReadAloudTests/ReadAloudTests-Info.plist";
+				PRODUCT_NAME = ReadAloudTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				"TEST_HOST[sdk=*]" = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -465,13 +466,13 @@
 		D776FF4A1732987000499564 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/lecteur.app/Contents/MacOS/lecteur";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReadAloud.app/Contents/MacOS/ReadAloud";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "lecteur/lecteur-Prefix.pch";
-				INFOPLIST_FILE = "lecteurTests/lecteurTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ReadAloud/ReadAloud-Prefix.pch";
+				INFOPLIST_FILE = "ReadAloudTests/ReadAloudTests-Info.plist";
+				PRODUCT_NAME = ReadAloudTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -480,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D776FF0F1732987000499564 /* Build configuration list for PBXProject "lecteur" */ = {
+		D776FF0F1732987000499564 /* Build configuration list for PBXProject "ReadAloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D776FF431732987000499564 /* Debug */,
@@ -489,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D776FF451732987000499564 /* Build configuration list for PBXNativeTarget "lecteur" */ = {
+		D776FF451732987000499564 /* Build configuration list for PBXNativeTarget "ReadAloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D776FF461732987000499564 /* Debug */,
@@ -498,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D776FF481732987000499564 /* Build configuration list for PBXNativeTarget "lecteurTests" */ = {
+		D776FF481732987000499564 /* Build configuration list for PBXNativeTarget "ReadAloudTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D776FF491732987000499564 /* Debug */,

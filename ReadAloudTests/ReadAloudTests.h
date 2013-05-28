@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface lecteurTests : SenTestCase
+@interface ReadAloudTests : SenTestCase
 
 @end

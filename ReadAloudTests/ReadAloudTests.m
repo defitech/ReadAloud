@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 dev. All rights reserved.
 //
 
-#import "lecteurTests.h"
+#import "ReadAloudTests.h"
 
-@implementation lecteurTests
+@implementation ReadAloudTests
 
 - (void)setUp
 {
