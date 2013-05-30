@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D76CA2BE1740E947001C13C9 /* mouth_icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = D76CA2BD1740E947001C13C9 /* mouth_icon.iconset */; };
+		D751CCAF1754B82E00359BDC /* Instructions-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D751CCAE1754B82E00359BDC /* Instructions-icon.png */; };
 		D776FF181732987000499564 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D776FF171732987000499564 /* Cocoa.framework */; };
 		D776FF221732987000499564 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D776FF201732987000499564 /* InfoPlist.strings */; };
 		D776FF241732987000499564 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF231732987000499564 /* main.m */; };
@@ -20,11 +20,11 @@
 		D776FF421732987000499564 /* ReadAloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF411732987000499564 /* ReadAloudTests.m */; };
 		D776FF5317329C1400499564 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D776FF5117329C1400499564 /* MasterViewController.m */; };
 		D776FF5417329C1400499564 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D776FF5217329C1400499564 /* MasterViewController.xib */; };
-		D79D574E173A582300678D4A /* Instructions-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D79D574D173A582300678D4A /* Instructions-icon.png */; };
 		D7A369FA174B7DE700C34468 /* Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A369F8174B7DE700C34468 /* Parameters.m */; };
 		D7A369FB174B7DE700C34468 /* Parameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A369F9174B7DE700C34468 /* Parameters.xib */; };
 		D7B6C93F1733DDB60025704D /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B6C93E1733DDB60025704D /* greenButton.png */; };
 		D7B6C9411733DDC30025704D /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B6C9401733DDC30025704D /* redButton.png */; };
+		D7F5079C1755FD090039C4D5 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D7F5079B1755FD090039C4D5 /* AppIcon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D76CA2BD1740E947001C13C9 /* mouth_icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = mouth_icon.iconset; sourceTree = "<group>"; };
+		D751CCAE1754B82E00359BDC /* Instructions-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instructions-icon.png"; sourceTree = "<group>"; };
 		D776FF141732987000499564 /* ReadAloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadAloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D776FF171732987000499564 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D776FF1A1732987000499564 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -58,15 +58,15 @@
 		D776FF3E1732987000499564 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D776FF401732987000499564 /* ReadAloudTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadAloudTests.h; sourceTree = "<group>"; };
 		D776FF411732987000499564 /* ReadAloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadAloudTests.m; sourceTree = "<group>"; };
-		D776FF5017329C1400499564 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
-		D776FF5117329C1400499564 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
-		D776FF5217329C1400499564 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterViewController.xib; path = ../MasterViewController.xib; sourceTree = "<group>"; };
-		D79D574D173A582300678D4A /* Instructions-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Instructions-icon.png"; path = "graphics/Instructions-icon.png"; sourceTree = SOURCE_ROOT; };
+		D776FF5017329C1400499564 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		D776FF5117329C1400499564 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		D776FF5217329C1400499564 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
 		D7A369F7174B7DE700C34468 /* Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parameters.h; sourceTree = "<group>"; };
 		D7A369F8174B7DE700C34468 /* Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parameters.m; sourceTree = "<group>"; };
 		D7A369F9174B7DE700C34468 /* Parameters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Parameters.xib; sourceTree = "<group>"; };
-		D7B6C93E1733DDB60025704D /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenButton.png; path = graphics/greenButton.png; sourceTree = SOURCE_ROOT; };
-		D7B6C9401733DDC30025704D /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redButton.png; path = graphics/redButton.png; sourceTree = SOURCE_ROOT; };
+		D7B6C93E1733DDB60025704D /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButton.png; sourceTree = "<group>"; };
+		D7B6C9401733DDC30025704D /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redButton.png; sourceTree = "<group>"; };
+		D7F5079B1755FD090039C4D5 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 		D776FF0B1732987000499564 = {
 			isa = PBXGroup;
 			children = (
-				D76CA2BD1740E947001C13C9 /* mouth_icon.iconset */,
+				D7F5079B1755FD090039C4D5 /* AppIcon.icns */,
 				D776FF1D1732987000499564 /* ReadAloud */,
 				D776FF3A1732987000499564 /* ReadAloudTests */,
 				D776FF161732987000499564 /* Frameworks */,
@@ -136,7 +136,7 @@
 				D776FF5017329C1400499564 /* MasterViewController.h */,
 				D776FF5117329C1400499564 /* MasterViewController.m */,
 				D776FF5217329C1400499564 /* MasterViewController.xib */,
-				D7F426E31737A0AE00543E0A /* graphics */,
+				D7F426E31737A0AE00543E0A /* Graphics */,
 				D776FF291732987000499564 /* AppDelegate.h */,
 				D776FF2A1732987000499564 /* AppDelegate.m */,
 				D776FF2C1732987000499564 /* MainMenu.xib */,
@@ -179,14 +179,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D7F426E31737A0AE00543E0A /* graphics */ = {
+		D7F426E31737A0AE00543E0A /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				D79D574D173A582300678D4A /* Instructions-icon.png */,
+				D751CCAE1754B82E00359BDC /* Instructions-icon.png */,
 				D7B6C93E1733DDB60025704D /* greenButton.png */,
 				D7B6C9401733DDC30025704D /* redButton.png */,
 			);
-			name = graphics;
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +266,9 @@
 				D776FF5417329C1400499564 /* MasterViewController.xib in Resources */,
 				D7B6C93F1733DDB60025704D /* greenButton.png in Resources */,
 				D7B6C9411733DDC30025704D /* redButton.png in Resources */,
-				D79D574E173A582300678D4A /* Instructions-icon.png in Resources */,
-				D76CA2BE1740E947001C13C9 /* mouth_icon.iconset in Resources */,
 				D7A369FB174B7DE700C34468 /* Parameters.xib in Resources */,
+				D751CCAF1754B82E00359BDC /* Instructions-icon.png in Resources */,
+				D7F5079C1755FD090039C4D5 /* AppIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +391,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -418,7 +418,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;

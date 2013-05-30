@@ -52,8 +52,9 @@
 									<object class="NSTextView" id="875236722">
 										<reference key="NSNextResponder" ref="22505807"/>
 										<int key="NSvFlags">2322</int>
-										<string key="NSFrameSize">{329, 70}</string>
+										<string key="NSFrameSize">{299, 84}</string>
 										<reference key="NSSuperview" ref="22505807"/>
+										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="801513866"/>
 										<string key="NSReuseIdentifierKey">_NS:13</string>
 										<object class="NSTextContainer" key="NSTextContainer" id="509958050">
@@ -86,7 +87,7 @@ IHN5c3TDqG1lIC0+IFBlcnNvbm5hbGlzZXI</bytes>
 												<nil key="NSDelegate"/>
 											</object>
 											<reference key="NSTextView" ref="875236722"/>
-											<double key="NSWidth">329</double>
+											<double key="NSWidth">299</double>
 											<int key="NSTCFlags">1</int>
 										</object>
 										<object class="NSTextViewSharedData" key="NSSharedData">
@@ -140,12 +141,13 @@ IHN5c3TDqG1lIC0+IFBlcnNvbm5hbGlzZXI</bytes>
 										</object>
 										<int key="NSTVFlags">6</int>
 										<string key="NSMaxSize">{463, 10000000}</string>
-										<string key="NSMinize">{329, 68}</string>
+										<string key="NSMinize">{299, 68}</string>
 										<nil key="NSDelegate"/>
 									</object>
 								</array>
-								<string key="NSFrameSize">{329, 68}</string>
+								<string key="NSFrameSize">{314, 68}</string>
 								<reference key="NSSuperview" ref="339198802"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="875236722"/>
 								<string key="NSReuseIdentifierKey">_NS:11</string>
 								<reference key="NSDocView" ref="875236722"/>
@@ -164,20 +166,22 @@ IHN5c3TDqG1lIC0+IFBlcnNvbm5hbGlzZXI</bytes>
 							<object class="NSScroller" id="1052681662">
 								<reference key="NSNextResponder" ref="339198802"/>
 								<int key="NSvFlags">256</int>
-								<string key="NSFrame">{{313, 0}, {16, 68}}</string>
+								<string key="NSFrame">{{314, 0}, {15, 68}}</string>
 								<reference key="NSSuperview" ref="339198802"/>
+								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:83</string>
 								<bool key="NSEnabled">YES</bool>
 								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 								<reference key="NSTarget" ref="339198802"/>
 								<string key="NSAction">_doScroller:</string>
-								<double key="NSPercent">0.97142857142857142</double>
+								<double key="NSPercent">0.80952380952380953</double>
 							</object>
 							<object class="NSScroller" id="801513866">
 								<reference key="NSNextResponder" ref="339198802"/>
 								<int key="NSvFlags">-2147483392</int>
 								<string key="NSFrame">{{-100, -100}, {87, 18}}</string>
 								<reference key="NSSuperview" ref="339198802"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="22505807"/>
 								<string key="NSReuseIdentifierKey">_NS:33</string>
 								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -190,6 +194,7 @@ IHN5c3TDqG1lIC0+IFBlcnNvbm5hbGlzZXI</bytes>
 						</array>
 						<string key="NSFrame">{{20, 184}, {329, 68}}</string>
 						<reference key="NSSuperview" ref="1005"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="22505807"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="NSsFlags">133200</int>
@@ -205,6 +210,7 @@ IHN5c3TDqG1lIC0+IFBlcnNvbm5hbGlzZXI</bytes>
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{349, 221}, {82, 32}}</string>
 						<reference key="NSSuperview" ref="1005"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="707673345">
@@ -230,7 +236,7 @@ IHN5c3TDqG1lIC0+IFBlcnNvbm5hbGlzZXI</bytes>
 				</array>
 				<string key="NSFrameSize">{480, 272}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView"/>
+				<reference key="NSWindow"/>
 				<string key="NSClassName">NSView</string>
 			</object>
 		</array>
@@ -488,7 +494,94 @@ IHN5c3TDqG1lIC0+IFBlcnNvbm5hbGlzZXI</bytes>
 			<nil key="sourceID"/>
 			<int key="maxID">50</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">MasterViewController</string>
+					<string key="superclassName">NSViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="buttonInstructionsPressed:">id</string>
+						<string key="buttonStartStopPressed:">id</string>
+						<string key="valueChangedForspeechSpeedSlider:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="buttonInstructionsPressed:">
+							<string key="name">buttonInstructionsPressed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="buttonStartStopPressed:">
+							<string key="name">buttonStartStopPressed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="valueChangedForspeechSpeedSlider:">
+							<string key="name">valueChangedForspeechSpeedSlider:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="buttonHideInstructions">NSButton</string>
+						<string key="parametersViewController">Parameters</string>
+						<string key="speechSpeedSlider">NSSlider</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="buttonHideInstructions">
+							<string key="name">buttonHideInstructions</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="parametersViewController">
+							<string key="name">parametersViewController</string>
+							<string key="candidateClassName">Parameters</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="speechSpeedSlider">
+							<string key="name">speechSpeedSlider</string>
+							<string key="candidateClassName">NSSlider</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/MasterViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSLayoutConstraint</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/NSLayoutConstraint.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">Parameters</string>
+					<string key="superclassName">NSViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">buttonGoToSpeechSynthesizer:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">buttonGoToSpeechSynthesizer:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">buttonGoToSpeechSynthesizer:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">masterViewController</string>
+						<string key="NS.object.0">MasterViewController</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">masterViewController</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">masterViewController</string>
+							<string key="candidateClassName">MasterViewController</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/Parameters.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">

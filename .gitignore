@@ -1,3 +1,6 @@
+# custom (non-Xcode) paths go here
+.idea
+
 #########################
 # .gitignore file for Xcode4 / OS X Source projects
 #
